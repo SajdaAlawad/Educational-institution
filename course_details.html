@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--  Start header -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>restorant</title>
+</head>
+  <!-- End header -->
+
+<body>
+ 
+   <div class="header">
+       <div class="container">
+           <div class="row">
+               <div class="col">
+               Tel: 050505005 - Email: Sajdaalavad@gamil.com
+               </div>
+               <div class="col">
+                <a href="" class="btn btn-danger" data-toggle="modal" data-target="#staticBackdrop">Log in </a>
+              </div>
+           </div>
+       </div>
+   </div> 
+   <!-- Start nav -->
+   <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="data:image/jpeg;base64,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" style="width: 50px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Discounts</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
+         
+        </div>
+      </div>
+  </nav>
+   
+ <!-- End nav -->
+
+<!---------start page name ----------->
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item"><a href="courses.html">Your Courses</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Physics Course</li>
+            </ol>
+          </nav>
+      <h1 class="display-4">Physics Course</h1>
+      <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+    </div>
+  </div>
+<!---------End page name ----------->
+ <!---------courses_details---------->
+  <div class="course_details">
+   <div class="container">
+       <div class="row">
+           <div class="col-md-9 col-12">
+             <div class="card">
+                 <h2>Course Name</h2>
+                 <span> Trainer: Elif Ölmaz</span>
+                 <img src="images/physics.jpg" alt="">
+                 <h2 class="p-3">Curriclum</h2>
+                 <div class="units">
+                 <div class="accordion" id="accordionExample">
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            UNITE 1
+                          </button>
+                        </h2>
+                      </div>
+                  
+                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                                  The current link item
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+                                <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+                                <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+                                <a href="#" class="list-group-item list-group-item-action " tabindex="-1" aria-disabled="true">A disabled link item</a>
+                              </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            UNITE 2
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item list-group-item-action " aria-current="true">
+                                  The current link item
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+                                <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+                                <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+                                <a href="#" class="list-group-item list-group-item-action " tabindex="-1" aria-disabled="true">A disabled link item</a>
+                              </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            UNITE 3
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item list-group-item-action " aria-current="true">
+                                  The current link item
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+                                <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+                                <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+                                <a href="#" class="list-group-item list-group-item-action " tabindex="-1" aria-disabled="true">A disabled link item</a>
+                              </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+             </div>
+           </div>
+           <div class="col-md-3 col-12">
+          <div class=" card p-3"> 
+            <h2> Course Feutures</h2>
+              <video controls >
+                  <source src="images/video.mp4">
+              </video>
+              <p >Duration : <span class="float-right">10 hourse</span></p>
+              <hr>
+              <p>Leacture : <span class="float-right">15</span></p>
+              <hr>
+              <p>Quize : <span class="float-right">22</span></p>
+              <p style="font-size :30px ; color: red">price: 100$ </p>
+              <hr>
+              <button class="btn btn-danger">Enroll Now</button>
+
+          </div>
+          <br><br>
+           <div class="card w-100">
+             <a href=""><img src="images/logo1.jpg" alt=""></a>
+             <h5>English Course</h5>
+           </div>
+           </div>
+       </div>
+   </div>
+  </div>
+ <!---------End courses_details ----------->
+
+
+
+ <!-- Start Footer  ---->
+ <footer >
+    <div class="container">
+      <div class="row">
+          <div class="col-sm-4">
+            <h2 >My Educational Institution</h2>
+            <p style="padding-top: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime alias quo beatae quidem, consequatur earum molestias quisquam natus impedit sit reprehenderit delectus nostrum eum! Ipsa id culpa aspernatur unde commodi.
+            </p>
+            </div>
+            <div class="col-sn-4">
+             <h2 >important links </h2>
+             <ul>
+              <li><a href=""> -  Home</a> </li>
+              <li><a href=""> -  contact us</a></li>
+              <li><a href=""> -  Our Team </a></li>
+              <li><a href=""> -  About  Us</a></li>
+              <li><a href="blog.html"> -  Discounts</a></li>
+             </ul>
+           </div>
+
+         <div class="col-sn-4">
+           <h2 >Follow Us </h2>
+           <ul>
+             <li><a href="" class=""><i class="fab fa-facebook fa-3x"></i></a></li>
+             <li> <a href="" class=""><i class="fab fa-instagram fa-3x"></i></a></li>
+             <li> <a href="" class=""><i class="fab fa-twitter-square fa-3x" style="color: rgb(0, 183, 255);"></i></a></li>
+             <li> <a href="" class=""><i class="fab fa-linkedin fa-3x"></i></a></li>
+            
+           </ul> 
+         </div>
+      </div>
+    </div>
+  </footer>
+  <div class="footer1 text-center bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+         <a href=""> <p style="color: white;"> All right reserved to Mishkah Foundation</p></a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- End  Footer ---->
+     
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+ 
+</body>
+</html>
+
+

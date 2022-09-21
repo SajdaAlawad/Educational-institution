@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+body{
+    font-family: 'Cairo', sans-serif;
+    height: 3000px;
+}
+/* ------------------start header------------------ */
+.header{
+    background-color:rgb(177, 39, 39);
+    color: white;  
+    height: 50px;
+    line-height: 50px;
+}
+ 
+.header a{
+    float: right;
+    margin-top: 5px;
+}
+/* ---------------- End header ----------------------*/
+
+/* ----------------- Start Slider  ------------------*/
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(165, 77, 77, 0.034);
+    position: absolute;
+    z-index:  1;
+}
+
+/* -------------------End Slider ---------------------*/
+/*--------------------start feutures------------------*/
+.feutures{
+    margin-top: 75px;
+}
+.feutures i{
+    width: 100px;
+    height: 100px;
+    background-color:brown;
+    line-height: 100px;
+    color: white;
+    font-size: 60px;
+}
+
+.feutures h3{
+   /* تغيير لون خلفيه الكلام
+   display: inline-block;
+   background-color: rgb(160, 117, 117);
+   buraya kadar*/
+   color: black;
+   margin-top: 20px;
+   margin-bottom: 20px;
+
+}
+.feutures P{
+    color:rgb(77, 75, 73);
+    line-height: 1.8;
+}
+.feutures h2{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+/* -------------------End feututures -----------------*/
+
+.our-team{
+    background-color: rgb(199, 194, 194);
+    padding: 20px;
+    border-bottom: 3px solid #931b26;
+  
+}
+
+/* -------------------Start stastic-----------------*/
+
+.Statistic{
+    
+    margin-top: 100px;
+    width: 100%;
+    height: 500px;
+    background-image: url("../images/log.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    border-bottom: 3px solid #931b26;
+}
+.Statistic .dverlay{
+
+  padding-top: 100px;
+  width: 100%;
+  height: 100%;
+}
+
+.Statistic .dverlay{
+    color: rgb(12, 12, 12);
+}
+
+.Statistic .dverlay{
+    color: rgb(22, 21, 21);
+    /* klime harflari kücütlemek icin */
+    font-size: 100px;
+}
+/* -------------------End Statstic-----------------*/
+
+/* -------------------start our customers-----------------*/
+.Our_customers{
+    margin-top: 50px;
+    height: 200px;
+    background-color: grey;
+    line-height: 100 px;
+    border-bottom: 3px solid #931b26; /* alt hat rengi degistirdik*/
+
+}
+/* -------------------End our customer--------------------*/
+
+.recent_news.btn-danger{
+    background-color: #931b26;
+    border-color: #931b26;
+}
+.recent_news.btn-danger :hover{
+    background-color: rgb(58, 40, 218); /* read more botoma taklidigimda rengiyi degisiyor*/
+}
+
+/* -------------------start footer-----------------*/
+footer{
+    background-color: rgb(145, 15, 15);
+    padding-top: 30px;
+   /* background-image: url("../images/back.png"); بتحط صوره للخلفيه*/
+   margin-top: 150px; 
+
+}
+
+footer p{
+    color: white;
+}
+
+footer h2{
+    color: white;
+}
+/* linkin renkigi degistir*/
+
+
+footer a{
+   color: white; 
+}
+
+ footer a:hover{
+     color : black;
+ }
+
+ footer ul li{
+       list-style : none;
+ }
+/* -------------------end footer-----------------*/
+
+.jumbotron{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.jumbotron .blog_info{
+    flex: 2;
+}
+.jumbotron .blog_image{
+    flex: 1;
+}
+
+
+.blog_details p{
+    line-height: 2;
+    padding: 10px;
+
+}
+.courses img:hover{
+    transform: scale(1.1);
+}
